@@ -9,5 +9,13 @@ function sum(x) {
 }
 
 
+function sum(x, y) {
+      if (y !== undefined) {
+            return x + y;
+      } else {
+            return function (y) { return x + y; };
+      }
+}
+
 console.log(sum(3,4));
 console.log(sum(3)(4));
