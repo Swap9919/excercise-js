@@ -5,11 +5,22 @@ function foo1() {
 }
 
 function foo2() {
-      return
-      {
+      return   // js automatically inserts semicolon after return so it returns undefined
+            {
             bar: "hello"
       };
 }
 
 console.log(foo1());
 console.log(foo2());
+
+
+
+console.log(0.1 + 0.2);
+console.log(0.1 + 0.2 == 1.3 );
+
+
+// function areTheNumbersAlmostEqual(num1, num2) {
+//       return Math.abs(num1 - num2) < Number.EPSILON;
+// }
+// console.log(areTheNumbersAlmostEqual(0.1 + 0.2, 0.3));
